@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>my coffe shop_01</title>
+<meta name="description" content="Stup — kedai kopi dengan biji kopi lokal pilihan, suasana cozy, dan wifi kencang. Buka setiap hari.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="kopi.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <img src="logo coffe shop.jpg" alt="Stup Coffee Logo" class="logo-img">
+    my coffee shop
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+      <a href="#menu">Menu</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#keunggulan">Tentang Kami</a>
+      <a href="#lokasi">Lokasi</a>
+      <a href="#footer">Kontak</a>
+    </nav>
+
+    <div class="header-cta">
+      <a href="#lokasi" class="btn btn-ghost">Reservasi</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+
+        <h1 class="hero-title">
+          Tempat kumpul nyaman,
+          <span class="hero-title-accent">secangkir kopi berkualitas.</span>
+        </h1>
+        <p class="hero-sub">
+          Racikan biji kopi lokal pilihan, suasana aesthetic yang bikin betah, dan wifi kencang untuk kerja atau sekadar bersantai bersama teman.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+          <a href="https://wa.me/6282221988244" target="_blank" rel="noopener" class="btn btn-outline">Pesan Sekarang / Reservasi</a>
+        </div>
+
+        <div class="hero-proof">
+          <div class="proof-item">
+            <span class="proof-icon" aria-hidden="true">☀</span>
+            <span>Buka Setiap Hari, 19.00–23.00</span>
+          </div>
+          <div class="proof-divider" aria-hidden="true"></div>
+          <div class="proof-item">
+            <span class="proof-icon" aria-hidden="true">★</span>
+            <span id="heroRatingText">Belum ada penilaian</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-ring"></div>
+        <img class="hero-img" src="original.jpg" alt="">
+        <div class="steam">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="hero-badge">
+          <span class="hero-badge-num">100%</span>
+          <span class="hero-badge-text">Biji Kopi<br>Lokal</span>
+        </div>
+      </div>
+    </div>
+
+    <svg class="hero-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,32 C280,80 480,0 720,24 C960,48 1180,88 1440,32 L1440,80 L0,80 Z"></path>
+    </svg>
+  </section>
+
+  <!-- ============ MENU FAVORIT (SLIDER) ============ -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Menu </p>
+        <h2 class="section-title">Pilihan yang paling dicari</h2>
+        <p class="section-sub">Geser untuk lihat semua racikan andalan kami — dari kopi klasik hingga teman ngemil.</p>
+      </div>
+    </div>
+
+    <div class="slider-wrap container">
+      <button class="slider-btn slider-btn-prev" id="prevBtn" aria-label="Geser ke kiri">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <div class="slider-track" id="sliderTrack" tabindex="0" aria-label="Daftar menu, geser untuk melihat lebih banyak">
+
+        <article class="menu-card">
+          <span class="menu-tag tag-best">Best Seller</span>
+          <div class="menu-img"><img src="pandan.jpg" alt="Espresso dalam cangkir kecil" loading="lazy"></div>
+          <div class="menu-body">
+            <h3>pandan copi</h3>
+            <p>harum dan rasa pandan yang membekas.</p>
+            <div class="menu-foot">
+              <span class="menu-price">Rp 20.000</span>
+              <button class="btn-add" data-item="Espresso Signature" data-price="20000">Tambah</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <span class="menu-tag tag-best">Best Seller</span>
+          <div class="menu-img"><img src="matcha.jpg" alt="Kopi susu gula aren" loading="lazy"></div>
+          <div class="menu-body">
+            <h3>MATCHA</h3>
+            <p>Perpaduan  susu segar, KOPI DAN MATCHA Pilihan.</p>
+            <div class="menu-foot">
+              <span class="menu-price">Rp 22.000</span>
+              <button class="btn-add" data-item="Kopi Susu Gula Aren" data-price="22000">Tambah</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <span class="menu-tag tag-reco">Recommended</span>
+          <div class="menu-img"><img src="gula aren.jpg" alt="Manual brew V60" loading="lazy"></div>
+          <div class="menu-body">
+            <h3>gula aren kopi</h3>
+            <p>kopi gula aren karakter rasa yang lebih bersih.</p>
+            <div class="menu-foot">
+              <span class="menu-price">Rp 28.000</span>
+              <button class="btn-add" data-item="Manual Brew V60" data-price="28000">Tambah</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <span class="menu-tag tag-reco">Recommended</span>
+          <div class="menu-img"><img src="coconat.jpg" alt="Matcha latte non-kopi" loading="lazy"></div>
+          <div class="menu-body">
+            <h3>coconat kopi</h3>
+            <p>cocokan dan kopi serasa anda menikmati kopi dan kelapa di tepi pantai</p>
+            <div class="menu-foot">
+              <span class="menu-price">Rp 25.000</span>
+              <button class="btn-add" data-item="Matcha Latte" data-price="25000">Tambah</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <span class="menu-tag tag-new">Favorit</span>
+          <div class="menu-img"><img src="americano.jpg" alt="Croissant coklat" loading="lazy"></div>
+          <div class="menu-body">
+            <h3>Butter Croissant</h3>
+            <p>Dipanggang segar tiap pagi, lapisan renyah dengan isian yang lumer.</p>
+            <div class="menu-foot">
+              <span class="menu-price">Rp 18.000</span>
+              <button class="btn-add" data-item="Butter Croissant" data-price="18000">Tambah</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <span class="menu-tag tag-new">Favorit</span>
+          <div class="menu-img"><img src="" alt="Pastry manis" loading="lazy"></div>
+          <div class="menu-body">
+            <h3>Pastry Almond</h3>
+            <p>Kombinasi tekstur flaky dan taburan almond panggang, pas untuk teman kopi.</p>
+            <div class="menu-foot">
+              <span class="menu-price">Rp 21.000</span>
+              <button class="btn-add" data-item="Pastry Almond" data-price="21000">Tambah</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-img"><img src="" alt="Cold brew kopi dingin" loading="lazy"></div>
+          <div class="menu-body">
+            <h3>Cold Brew</h3>
+            <p>Diseduh dingin selama 18 jam, rasa halus dengan tingkat asam rendah.</p>
+            <div class="menu-foot">
+              <span class="menu-price">Rp 24.000</span>
+              <button class="btn-add" data-item="Cold Brew" data-price="24000">Tambah</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <button class="slider-btn slider-btn-next" id="nextBtn" aria-label="Geser ke kanan">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <div class="slider-dots" id="sliderDots" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ GALERI SUASANA KEDAI ============ -->
+  <section class="gallery-section" id="galeri">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Galeri</p>
+        <h2 class="section-title">Suasana yang bikin betah berlama-lama</h2>
+        <p class="section-sub">Geser untuk menjelajahi sudut-sudut favorit di Stup — klik foto untuk melihat lebih besar.</p>
+      </div>
+    </div>
+
+    <div class="gallery-wrap container">
+      <button class="slider-btn gallery-btn-prev" id="galleryPrevBtn" aria-label="Geser galeri ke kiri">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <div class="gallery-track" id="galleryTrack" tabindex="0" aria-label="Galeri foto suasana kedai, geser untuk melihat lebih banyak">
+        <img class="gallery-photo tall" src="cokaiba.png" alt="Biji kopi pilihan" loading="lazy">
+        <img class="gallery-photo" src="cokaiba.png" alt="Interior kedai yang hangat" loading="lazy">
+        <img class="gallery-photo tall" src="cokaiba.png" alt="Latte art di atas meja kayu" loading="lazy">
+        <img class="gallery-photo" src="cokaiba.png" alt="Secangkir kopi di meja" loading="lazy">
+        <img class="gallery-photo tall" src="cokaiba.png" alt="Detail biji kopi sangrai" loading="lazy">
+        <img class="gallery-photo" src="cokaiba.png" alt="Sudut duduk kedai" loading="lazy">
+        <img class="gallery-photo tall" src="cokaiba.png" alt="Cold brew di meja bar" loading="lazy">
+        <img class="gallery-photo" src="cokaiba.png" alt="Latte hangat dengan foam" loading="lazy">
+        <img class="gallery-photo tall" src="cokaiba.png" alt="Ruang duduk luas kedai" loading="lazy">
+        <img class="gallery-photo" src="cokaiba.png" alt="Meja bar barista" loading="lazy">
+        <img class="gallery-photo tall" src="cokaiba.png" alt="Proses menuang kopi" loading="lazy">
+        <img class="gallery-photo" src="cokaiba.png" alt="Sudut kedai dengan tanaman" loading="lazy">
+        <img class="gallery-photo tall" src="cokaiba.png" alt="Tampak depan kedai" loading="lazy">
+        <img class="gallery-photo" src="cokaiba.png" alt="Barista meracik kopi" loading="lazy">
+        <img class="gallery-photo tall" src="fai.png" alt="Meja kayu dengan cangkir kopi" loading="lazy">
+        <img class="gallery-photo" src="fai.png" alt="Interior kedai dari sudut lain" loading="lazy">
+        <img class="gallery-photo tall" src="fai.png" alt="Kopi dengan pastry" loading="lazy">
+        <img class="gallery-photo" src="fai.png" alt="Suasana sore di kedai" loading="lazy">
+      </div>
+
+      <button class="slider-btn gallery-btn-next" id="galleryNextBtn" aria-label="Geser galeri ke kanan">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ KEUNGGULAN ============ -->
+  <section class="value-section" id="keunggulan">
+    <div class="ring-watermark" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-head light">
+        <p class="eyebrow">Kenapa Nongkrong di Sini</p>
+        <h2 class="section-title">Lebih dari sekadar secangkir kopi</h2>
+      </div>
+
+      <div class="value-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 40 40" width="30" height="30" fill="none"><path d="M20 6c-6 6-9 11-9 16a9 9 0 0 0 18 0c0-5-3-10-9-16Z" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Biji Kopi Lokal Premium</h3>
+          <p>Disortir langsung dari petani terbaik Nusantara, dipanggang segar tiap minggu untuk menjaga karakter rasanya.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 40 40" width="30" height="30" fill="none"><rect x="7" y="10" width="26" height="18" rx="3" stroke="currentColor" stroke-width="2"/><path d="M13 30v3M27 30v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Cozy &amp; Wifi Kencang</h3>
+          <p>Ruang duduk nyaman dengan pencahayaan hangat, colokan di tiap meja, dan koneksi internet stabil untuk kerja.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 40 40" width="30" height="30" fill="none"><circle cx="20" cy="14" r="6" stroke="currentColor" stroke-width="2"/><path d="M8 34c1-7 6-11 12-11s11 4 12 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Barista Ramah &amp; Berpengalaman</h3>
+          <p>Tim barista bersertifikat siap meracik pesanan sesuai selera, sekaligus berbagi cerita di balik setiap cangkir.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 40 40" width="30" height="30" fill="none"><path d="M20 4v6M20 30v6M4 20h6M30 20h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Konsisten Setiap Cangkir</h3>
+          <p>Takaran dan proses seduh terstandardisasi, jadi rasa favoritmu selalu sama enaknya setiap kunjungan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BERI NILAI ============ -->
+  <section class="rating-section" id="rating">
+    <div class="container">
+      <div class="section-head rating-head">
+        <p class="eyebrow">Beri Nilai</p>
+        <h2 class="section-title">Gimana pengalamanmu di Stup?</h2>
+        <p class="section-sub">Bintang dari kamu bantu pelanggan lain kenal Stup lebih baik.</p>
+      </div>
+
+      <div class="rating-box">
+        <div class="star-input" id="starInput" role="radiogroup" aria-label="Beri nilai bintang">
+          <button type="button" class="star-btn" data-value="1" aria-label="Beri nilai 1 bintang">★</button>
+          <button type="button" class="star-btn" data-value="2" aria-label="Beri nilai 2 bintang">★</button>
+          <button type="button" class="star-btn" data-value="3" aria-label="Beri nilai 3 bintang">★</button>
+          <button type="button" class="star-btn" data-value="4" aria-label="Beri nilai 4 bintang">★</button>
+          <button type="button" class="star-btn" data-value="5" aria-label="Beri nilai 5 bintang">★</button>
+        </div>
+        <p class="rating-feedback" id="ratingFeedback">Ketuk bintang untuk memberi nilai</p>
+        <p class="rating-summary" id="ratingScore">Belum ada penilaian</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOKASI & INFORMASI ============ -->
+  <section class="location-section" id="lokasi">
+    <div class="container location-grid">
+      <div class="location-info">
+        <p class="eyebrow">Kunjungi Kami</p>
+        <h2 class="section-title">Mampir, dan rasakan sendiri</h2>
+
+        <dl class="info-list">
+          <div class="info-row">
+            <dt><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg></dt>
+            <dd>F37W+6V9, Sagea - Patani, Sagea, Kec. Weda Utara, Kabupaten Halmahera Tengah, Maluku Utara</dd>
+          </div>
+          <div class="info-row">
+            <dt><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></dt>
+            <dd>Setiap Hari, 18.00 – 23.00 WITA</dd>
+          </div>
+          <div class="info-row">
+            <dt><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M4 5h16v14H4z" stroke="currentColor" stroke-width="1.8"/><path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="1.8"/></svg></dt>
+            <dd>fahrirusman415@gmail.com</dd>
+          </div>
+        </dl>
+
+        <div class="location-actions">
+          <a href="https://wa.me/6282221988244" target="_blank" rel="noopener" class="btn btn-primary">
+            Pesan via WhatsApp
+          </a>
+          <a href="https://maps.app.goo.gl/F7f8sjnv2W5giscR9" target="_blank" rel="noopener" class="btn btn-outline">
+            Buka Google Maps
+          </a>
+        </div>
+      </div>
+
+      <div class="location-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.3555035548098!2d128.0971331547805!3d0.46299208518536406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x329dad000c1775f5%3A0xc84eb112cc4cad5e!2sKantor%20Desa%20Kiya!5e0!3m2!1sen!2sid!4v1787114832869!5m2!1sen!2sid"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Lokasi Stup di Google Maps">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="logo logo-light">my coffe shop</a>
+      <p>Kopi lokal, ruang hangat, dan cerita yang lahir dari setiap cangkir.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Navigasi footer">
+      <h4>Jelajahi</h4>
+      <a href="#menu">Menu</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#keunggulan">Kenapa Kami</a>
+      <a href="#lokasi">Lokasi</a>
+    </nav>
+
+    <div class="footer-social">
+      <h4>sosial media</h4>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/om_eposs?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" aria-label="Instagram Stup">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@ccyclopssss?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" aria-label="TikTok Stup">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <a href="https://wa.me/6282221988244" target="_blank" rel="noopener" aria-label="WhatsApp Stup">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 12a8 8 0 1 1-3.6-6.7L20 4l-1 3.7A8 8 0 0 1 20 12Z" stroke="currentColor" stroke-width="1.8"/><path d="M9 9.5c0 3.5 2.5 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> Stup. Seluruh hak cipta dilindungi.</p>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX GALERI ============ -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Tutup galeri">&times;</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+</div>
+
+<!-- ============ KERANJANG PESANAN ============ -->
+<button class="cart-fab" id="cartToggle" aria-label="Lihat keranjang pesanan">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M4 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L21 8H7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="21" r="1.4" fill="currentColor"/><circle cx="18" cy="21" r="1.4" fill="currentColor"/></svg>
+  <span class="cart-badge" id="cartCount">0</span>
+</button>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-drawer-head">
+    <h3>Pesanan Kamu</h3>
+    <button class="cart-close" id="cartClose" aria-label="Tutup keranjang">&times;</button>
+  </div>
+
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty">Keranjang masih kosong. Yuk pilih menu favoritmu!</p>
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-payment">
+      <p class="cart-payment-label">Metode Pesan</p>
+      <div class="payment-options">
+        <label class="payment-option">
+          <input type="radio" name="paymentMethod" value="cod" id="payCod" checked>
+          <span>COD <small>(min. 5 pesanan)</small></span>
+        </label>
+        <label class="payment-option">
+          <input type="radio" name="paymentMethod" value="tf" id="payTf">
+          <span>Transfer <small>(min. 8 pesanan)</small></span>
+        </label>
+      </div>
+      <p class="cart-payment-warning" id="cartPaymentWarning"></p>
+    </div>
+
+    <div class="cart-total-row">
+      <span>Total</span>
+      <strong id="cartTotal">Rp 0</strong>
+    </div>
+    <button class="btn btn-primary cart-checkout" id="cartCheckout" disabled>
+      Pesan via WhatsApp
+    </button>
+    <p class="cart-hint">Kamu akan diarahkan ke WhatsApp dengan daftar pesanan yang sudah tersusun otomatis.</p>
+  </div>
+</aside>
+
+<script src="kopi.js"></script>
+</body>
+</html>
